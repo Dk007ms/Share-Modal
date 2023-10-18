@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/share (4).png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+
+        <div class="container">
+           <div class="inner-containers image">
+            <img src="assets/personal photo.png" class="profile" alt="myprofile">
+           </div>
+           <div class="inner-containers">
+            <h3>Dhruv Kaushik</h3>
+           </div>
+           <div class="inner-containers">
+              <h4>
+                MERN Stack Developer 
+              </h4>
+           </div>
+           <div class="inner-containers btn-div">
+              <button class="btn1" onclick="openmodal()">
+                 <img src="assets/share (1).png" class="share-icon" alt="">
+                 <h5>
+                    Share my Profile
+                 </h5>
+              </button>
+
+              <button class="btn2" onclick="Redirect()">
+                 <h5>Follow me</h5>
+              </button>
+           </div>
+        </div>
+
+        <div class="modal">
+            <div class="modalcontainer1">
+                <h2>Share My Profile</h2>
+                <button class="cutbtn" onclick="cutbtn()">
+                    <img src="assets/cross.png" class="cross">
+                </button>
+            </div>
+            <div class="modalcontainer-line">
+
+            </div>
+            
+            <h4>
+                Share this via
+            </h4>
+            
+            <div class="modalcontainer">
+                <a href="https://www.facebook.com/"><img src="assets/facebook.png"class="fb socials"></a>
+                <a href="https://www.linkedin.com/in/dhruvkaushik12/"><img src="assets/linkedin.png" class="linkedin socials"></a>
+                <a href="https://www.instagram.com/dhruvk.kaushik/"><img src="assets/instagram.png" class="insta socials"></a>
+                <a href="https://twitter.com/Dhruv_kaushik12"><img src="assets/twitter.png" class="twitter socials"></a>
+                <a href="https://github.com/Dk007ms"><img src="assets/github.png" class="discord socials"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+  <div class="overlay" onclick="cutbtn()">
+     
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

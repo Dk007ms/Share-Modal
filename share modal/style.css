@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(3, 3, 3);
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgba(39, 55, 49, 0.7);
+    width: 20rem;
+    height: 25rem;
+    border-radius: 25px;
+    color:white;
+    border: 1px solid white;
+    z-index: 10;
+    transition: scale 350ms ease-in-out;
+}
+
+.inner-containers{
+    position: relative;
+}
+
+.image{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    border: 0.5px solid white;
+}
+
+.profile{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    object-fit:contain;
+    background-color: black;
+    border: 0.5px solid white;
+}
+
+
+.btn-div{
+    width: 17rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.btn1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 8rem;
+    height: 2rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.share-icon{
+    width: 1rem;
+    object-fit: cover;
+    color: white;
+}
+
+.btn2{
+    width: 8rem;
+    height: 2rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.circle1{
+    position: absolute;
+    left:29rem;
+    top :2rem;
+    z-index: 5;
+    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    opacity: 0.91;
+    box-shadow: 0px 0px 50px 40px rgb(68, 68, 145);
+    animation: circle1 7s linear 0s infinite;
+}
+
+@keyframes circle1{
+    0% {transform: translateX(0) translateY(0);}
+    50% {transform: translateX(1rem) translateY(1rem);}
+    100% {transform: translateX(0) translateY(0);}
+}
+
+.circle2{
+    position: absolute;
+    top: 30rem;
+    left:56rem;
+    z-index: 5;
+    border-radius: 100%;
+    width: 13rem;
+    height: 13rem;
+    background-image: linear-gradient(315deg, #FFFFFF 0%, #eaff62 50%, #002aff 100%);
+    opacity: 0.91;  
+    box-shadow: 0px 0px 50px 40px rgb(237, 240, 47);
+    animation: circle2 15s linear 0s infinite;
+}
+
+@keyframes circle2{
+    0% {transform: translateX(0) translateY(0);}
+    50% {transform: translateX(-3rem) translateY(-5rem);}
+    100% {transform: translateX(0) translateY(0);}
+}
+
+.modal{
+    position: absolute;
+    width: 30rem;
+    height: 15rem;
+    top: 17rem;
+    left: 32rem;
+    z-index: 15;
+    color: white;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    scale: 0;
+    transition-property: scale;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+    background-color: rgba(10, 10, 10, 0.5);
+
+}
+
+.active2{
+   
+    filter: blur(1rem);
+    scale: 0.9;
+}
+    
+
+.active {
+    scale: 1;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #24232383;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: scale 500ms ease-in-out;
+}
+
+.overlayactive {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.socials{
+    width: 3rem;
+    border-radius: 100%;
+    border: 0.01px solid white;
+    object-fit: fill;
+}
+
+.cross{
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: transparent;
+}
+
+.modalcontainer1{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 28rem;
+    height: 3rem;
+}
+.modalcontainer{
+    display: flex;
+    justify-content:space-between;
+    color: white;
+    width: 28rem;
+    height: 3rem;
+}
+
+.modalcontainer-line{
+    width: 28rem;
+    height: 0.1rem;
+    background-color: white;
+}
+
+.cutbtn{
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
